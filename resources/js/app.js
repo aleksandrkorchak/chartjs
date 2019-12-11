@@ -22,6 +22,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('prop-component', require('./components/PropComponent.vue').default);
 Vue.component('ajax-component', require('./components/AjaxComponent.vue').default);
+Vue.component('chartline-component', require('./components/ChartlineComponent.vue').default);
 
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
