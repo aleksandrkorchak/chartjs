@@ -21,6 +21,7 @@ Route::get('/start/get-json', 'StartController@getJson');
 
 Route::get('/start/data-chart', 'StartController@chartData');
 
+Route::get('/start/random-chart', 'StartController@chartRandom');
 
 Auth::routes();
 

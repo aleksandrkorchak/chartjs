@@ -44,12 +44,40 @@ class StartController extends Controller
     {
         return [
             'labels' => ['март', 'апрель', 'май', 'июнь'],
-            'datasets' => array([
-                'label' => 'Продажи',
-                'backgroundColor' => ['#DO1919', '#F26202', '#EAAE00', '#B5CC18'],
-                'data' => [15000, 50000, 10000, 8000]
-            ])
+            'datasets' => array(
+                [
+                    'label' => 'Продажи',
+                    'backgroundColor' => '#F26202',
+                    'data' => [15000, 5000, 10000, 30000]
+                ],
+                [
+                    'label' => 'Прошлый год',
+                    'backgroundColor' => '#B5CC18',
+                    'data' => [40000, 10000, 5000, 60000]
+                ]
+            )
         ];
     }
+
+
+    public function chartRandom()
+    {
+        return [
+            'labels' => ['март', 'апрель', 'май', 'июнь'],
+            'datasets' => array(
+                [
+                    'label' => 'Золото',
+                    'backgroundColor' => '#16AB39',
+                    'data' => [rand(0, 40000), rand(0, 40000), rand(0, 40000), rand(0, 40000)],
+                ],
+                [
+                    'label' => 'Серебро',
+                    'backgroundColor' => '#B5CC18',
+                    'data' => [rand(0, 40000), rand(0, 40000), rand(0, 40000), rand(0, 40000)],
+                ]
+            )
+        ];
+    }
+
 
 }

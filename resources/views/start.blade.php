@@ -24,6 +24,7 @@
                 <div class="btn-group mr-2" role="group" aria-label="Second group">
                     <a type="button" class="btn btn-dark" href="#4">Line</a>
                     <a type="button" class="btn btn-dark" href="#5">Pie</a>
+                    <a type="button" class="btn btn-dark" href="#6">Trigger</a>
                 </div>
             </div>
         </div>
@@ -80,6 +81,17 @@
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#5 ChartJS (Pie) & VueJS *ajax</h2>
                                 <chartpie-component></chartpie-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-2" data-hash="6">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#6 ChartJS (Line) & VueJS *ajax+trigger+reload</h2>
+                                <chartrandom-component></chartrandom-component>
                             </div>
                         </div>
                     </div>
