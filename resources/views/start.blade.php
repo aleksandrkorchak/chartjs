@@ -23,6 +23,7 @@
             <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group mr-2" role="group" aria-label="Second group">
                     <a type="button" class="btn btn-dark" href="#4">Line</a>
+                    <a type="button" class="btn btn-dark" href="#5">Pie</a>
                 </div>
             </div>
         </div>
@@ -68,6 +69,17 @@
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#4 ChartJS (Line) & VueJS *ajax</h2>
                                 <chartline-component></chartline-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-2" data-hash="5">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#5 ChartJS (Pie) & VueJS *ajax</h2>
+                                <chartpie-component></chartpie-component>
                             </div>
                         </div>
                     </div>
