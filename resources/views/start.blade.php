@@ -8,6 +8,9 @@
         <div class="col-sm-4">
             <h2 class="border-bottom text-center">ChartJS: Vue+Laravel</h2>
         </div>
+        <div class="col-sm-4">
+            <h2 class="border-bottom text-center">Realtime Vue+Laravel</h2>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm-4">
@@ -32,6 +35,7 @@
             <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group" role="group" aria-label="Third group">
                     <a type="button" class="btn btn-primary" href="#7">ChartJS</a>
+                    <a type="button" class="btn btn-primary" href="#8">Chat</a>
                 </div>
             </div>
         </div>
@@ -104,12 +108,25 @@
                     </div>
                 </div>
 
+
                 <div class="row m-2" data-hash="7">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#7 REALTIME ChartJS (Line) & VueJS *ajax+trigger+reload</h2>
                                 <socket-component></socket-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row m-2" data-hash="8">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#8 REALTIME Chat VueJS *ajax+trigger+reload</h2>
+                                <socket-chat-component></socket-chat-component>
                             </div>
                         </div>
                     </div>

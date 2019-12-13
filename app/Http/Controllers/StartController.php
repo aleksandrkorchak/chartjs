@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\NewEvent;
+use App\Events\NewMessage;
 use Illuminate\Http\Request;
 
 class StartController extends Controller
@@ -106,5 +107,16 @@ class StartController extends Controller
         return $result;
 
     }
+
+
+
+    public function sendMessage(Request $request)
+    {
+        event(new NewMessage($request->input('message')));
+
+    }
+
+
+
 
 }
