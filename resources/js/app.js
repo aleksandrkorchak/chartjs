@@ -25,6 +25,7 @@ Vue.component('ajax-component', require('./components/AjaxComponent.vue').defaul
 Vue.component('chartline-component', require('./components/ChartlineComponent.vue').default);
 Vue.component('chartpie-component', require('./components/ChartpieComponent.vue').default);
 Vue.component('chartrandom-component', require('./components/ChartrandomComponent.vue').default);
+Vue.component('socket-component', require('./components/SocketComponent.vue').default);
 
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({

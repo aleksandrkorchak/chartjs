@@ -1,4 +1,5 @@
 window._ = require('lodash');
+window.io = require('socket.io-client');
 
 
 
@@ -12,9 +13,8 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
-    require('owl.carousel');
-
     require('bootstrap');
+    require('owl.carousel');
 } catch (e) {}
 
 /**
