@@ -27,6 +27,7 @@ Vue.component('chartpie-component', require('./components/ChartpieComponent.vue'
 Vue.component('chartrandom-component', require('./components/ChartrandomComponent.vue').default);
 Vue.component('socket-component', require('./components/SocketComponent.vue').default);
 Vue.component('socket-chat-component', require('./components/SocketChatComponent.vue').default);
+Vue.component('socket-private-component', require('./components/SocketPrivateComponent.vue').default);
 
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({

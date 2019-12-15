@@ -36,6 +36,7 @@
                 <div class="btn-group" role="group" aria-label="Third group">
                     <a type="button" class="btn btn-primary" href="#7">ChartJS</a>
                     <a type="button" class="btn btn-primary" href="#8">Chat</a>
+                    <a type="button" class="btn btn-primary" href="#9">Chat private</a>
                 </div>
             </div>
         </div>
@@ -126,7 +127,42 @@
                         <div class="card">
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#8 REALTIME Chat VueJS *ajax+trigger+reload</h2>
+                                @if(Auth::check())
+                                    <h4 class="text-center">пользователь: {{ Auth::user()->email }}</h4>
+                                @endif
                                 <socket-chat-component></socket-chat-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-2" data-hash="8">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#8 REALTIME Chat VueJS *ajax+trigger+reload</h2>
+                                @if(Auth::check())
+                                    <h4 class="text-center">пользователь: {{ Auth::user()->email }}</h4>
+                                @endif
+                                <socket-chat-component></socket-chat-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row m-2" data-hash="9">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#9 REALTIME Chat Private VueJS *ajax+trigger+reload</h2>
+                                @if( Auth::check())
+                                    <h4 class="text-center">пользователь: {{ Auth::user()->email }}</h4>
+                                    <socket-private-component
+                                        :users="{{ \App\User::select('email', 'id')->where('id', '!=', Auth::id())->get() }}"
+                                        :user="{{ Auth::user() }}">
+                                    </socket-private-component>
+                                @endif
                             </div>
                         </div>
                     </div>

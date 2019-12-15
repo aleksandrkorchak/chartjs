@@ -116,7 +116,16 @@ class StartController extends Controller
 
     }
 
+    public function sendPrivateMessage(Request $request)
+    {
+        //первый способ вызвать событие
+//        event(new NewMessage($request->input('message')));
 
+        //Другой способ вызвать событие
+        \App\Events\PrivateMessage::dispatch($request->all());
+
+        return $request->all();
+    }
 
 
 }
